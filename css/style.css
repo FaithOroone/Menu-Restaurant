@@ -11,3 +11,7 @@ jumbotron img{
   margin-right: auto;
   display: block;
 }
+.button1{
+  border-color:#F15A29;
+  color: #F15A29;
+}
