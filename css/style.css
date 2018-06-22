@@ -5,6 +5,7 @@
   left:0;
   background-color:#F15A29;
   text-align: center;
+  background-image: url(images/backgrounds/landing.jpg);
 }
 jumbotron img{
   margin-left: auto;
@@ -16,5 +17,8 @@ jumbotron img{
   color: #F15A29;
 }
 #carousel{
-  background-image: url(foodsBg.jpg);
+  background-image: url(images/backgrounds/foodsBg.jpg);
+}
+#subcribe{
+  background-image: url(images/backgrounds/subscribe.jpg);
 }
