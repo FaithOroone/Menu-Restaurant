@@ -1,0 +1,12 @@
+.jumbotron{
+  width: 100%;
+  length:100%;
+  top:0;
+  left:0;
+  background-color:#F15A29;
+}
+jumbotron img{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
