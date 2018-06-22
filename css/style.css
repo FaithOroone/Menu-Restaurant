@@ -15,3 +15,6 @@ jumbotron img{
   border-color:#F15A29;
   color: #F15A29;
 }
+#carousel{
+  background-image: url(foodsBg.jpg);
+}
