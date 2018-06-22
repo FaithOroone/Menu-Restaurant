@@ -28,12 +28,18 @@ jumbotron img{
   background-color: #F15A29;
   text-align: center;
 }
+.happy{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90px;
+}
 .Party{
   background-color:#F15A29;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100px;
+  height: 90px;
 }
 .Lunch{
   background-image: url(../images/foodtop/lunch.jpg);
