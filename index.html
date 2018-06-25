@@ -6,56 +6,61 @@
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body><!--body-->
+  <body>
     <header><!--header-->
-      <div class="sidenav" id="mysidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
-      <div class="container-fluid"><!--container logo-->
-        <div class="jumbotron">
-          <img src="images/logoBig.png" alt="">
-          <p>We Provide The Best Food<br> At The <strong>Right Price.</strong></p>
+      <div class="jumbotron"><!--start of div jumbotron-->
+        <div class="sidenav" id="mySidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">contacts</a>
+          <a href="#">events</a>
+          <a href="#">Menu</a>
         </div>
-      <!--end of container logo-->
-      <div class="container-fluid"><!--container div-->
-        <div class="row" id="foodtop"><!--row div -->
-          <div class="col-md-3"><!--col div-->
-            <h4 class="happy">Happy Hour</h4>
-            <div class="row">
-              <h4 class="Party">Party Time</h4>
-              </div>
-          </div><!--end of col div-->
-          <div class="col-md-3"><!--col2 div-->
-            <h4 class="Breakfast"><em>Breakfast</em></h4>
-          </div><!--end of col2 div-->
-          <div class="col-md-3"><!--col3 div-->
-            <h4 class="Lunch"><em>Lunch</em></h4>
-          </div><!--end of col3 div-->
-          <div class="col-md-3"><!--col4 div-->
-            <h4 class="Dinner"><em>Dinner</em><h4>
-          </div><!--end of col4 div-->
-        </div><!--end of row div -->
-      </div><!--end of container div-->
+        <nav>
+          <a href="#" onclick="openNav()">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden ="true"></span>
+         </a>
+        </nav>
+        <img src="images/logoBig.png" alt="">
+        <p>We Provide The Best Food<br> At The <strong>Right Price.</strong></p>
+      </div><!--end of jumbotron div-->
     </header><!--end of header-->
+
+    <section class="happy-hours"><!--happy-hours section-->
+      <div class="container-fluid"><!--container fluid-->
+        <div class="row"><!--happy row-->
+          <div class="col-md-3" id="Happy-Hour">
+            <div class="row">
+              <h3 class="happy">Happy Hour</h4>
+            </div>
+            <div class="row">
+              <h3 class="Party">Party Time</h4>
+            </div>
+          </div><!--end of col-->
+          <div class="col-md-3 overlay" id="Breakfast"><!--col2 div-->
+            <h4 class="Breakfast">Breakfast</h4>
+          </div><!--end of col2 div-->
+          <div class="col-md-3 overlay" id="Lunch"><!--col3 div-->
+            <h4 class="Lunch">Lunch</h4>
+          </div><!--end of col3 div-->
+          <div class="col-md-3 overlay" id="Dinner"><!--col4 div-->
+            <h4 class="Dinner">Dinner</h4>
+          </div><!--end of col4 div-->
+        </div><!--end of happy row-->
+      </div><!--end of container fluid-->
+    </section><!--end of happy-hours section-->
 
     <section class="main-content"><!--section for main content-->
       <div class="container"><!--container main content-->
         <div class="row"><!--row for main content-->
           <div class="col-md-6"><!--col1 for main content-->
-          <li class="panel panel default">
-            <div class="panel panel-heading"><!--panel title-->
-              <img src="images/fastFood1.jpg" >
+            <div class="well">
+              <img src="images/fastFood1.jpg">
               <img src="images/fastFood2.jpg">
-            </div><!--end of panel title-->
+            </div>
           </div><!--end of col1 for main content-->
-
           <div class="col-md-6"><!--col2 for main content-->
-            <h3>Fast Food</h3>
-            <p><strong>You'll love our deliciousfast food.</strong></p>
+            <h2>Fast Food</h2>
+            <p><strong>You'll love our delicious fast food.</strong></p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum lorem in sem egestas feugiat.
               Integer blandit lorem velit, eget tempor augue commodo ac. Sed pulvinar commodo erat ut ornare. Nam sed felis nibh.
               Pellentesque sollicitudin posuere neque, sit amet semper felis luctus sed. Morbi consectetur erat neque, et vehicula
@@ -71,8 +76,8 @@
         </div><!--end of row main content-->
 
         <div class="row"><!--row for main content-->
-          <div class="col-md-6"><!--col1 for main content-->
-            <h3>Drinks</h3>
+          <div class="drinks1 col-md-6"><!--col1 for main content-->
+            <h2>Drinks</h2>
             <p><strong>we also produce delicious drinks.</strong></p>
             <p>Suspendisse vitae eros sit amet augue condimentum vulputate et nec nulla. Curabitur bibendum gravida lacus.
               Donec cursus laoreet odio, id fermentum arcu dictum id. Sed at vestibulum arcu, a ullamcorper dui.
@@ -83,106 +88,90 @@
               nulla vitae odio elementum condimentum at id urna. Donec ornare, magna aliquam bibendum eleifend, justo erat
               posuere quam, nec ornare ipsum est eu Phasellus diam libero, dictum quis maximus id, fringilla in nisi
             </p>
-            <button type="submit" class="button1">View Gallery--></button>
-          </div><!--end of col1 for main content-->
-          <div class="col-md-6"><!--col2 for main content-->
-            <img src="images/drink1.jpg" >
-            <img src="images/drink2.jpg">
-          </div><!--end of col2 for main content-->
-        </div><!--end of row main content-->
-      </div><!--end of container main content-->
-    </section class="carousel"><!--carousel-->
+            <button type="button" class="button1">View Gallery--></button>
+            </div><!--end of col1 for main content-->
+              <div class="col-md-6"><!--col2 for main content-->
+                <div class="well">
+                  <img src="images/drink1.jpg"><img src="images/drink2.jpg">
+                </div>
+              </div><!--end of col2 for main content-->
+            </div><!--end of row main content-->
+          </div><!--end of container main content-->
 
-    <div class="container-fluid" id="carousel"><!--carousel container-->
-      <div class="container">
-      <div class="row"><!--row carousel section-->
-        <div class="col-md-4"><!-- col  carousel section-->
-          <div class="panel panel heading"><!--panel heading fast Food-->
-            <nav class="nav nav-tabs">
-              <h4 class="panel panel-title" "action" <a data-toggle="tab" href="#">Fast Food</a></h4>
-            </nav>
-          </div><!--end of panel heading-->
-          <div class="panel panel-body"><!--panel body fast foods-->
-            <img src="images/fastfood/chickenBurger.jpg" alt="">
-          </div><!--end of panel body fast foods-->
-          <div class="panel panel-footer"><!--panel footer-->
-            <p>Chicken Burger</p>
-          </div><!--end of panel footer-->
-        </div><!-- end of col carousel section-->
+          <section><!--fast food section-->
+              <div class="container">
+                <div class="nav">
+                  <ul class="nav nav-tabs">
+                    <li class="active col-md-3"><a data-toggle="tab"href="#FastFood">Fast Food</a></li>
+                    <li class="col-md-3"><a data-toggle="tab" href="#Drinks">Drinks</a></li>
+                    <li class="col-md-3"><a data-toggle="tab"href="#Chicken">Chicken</a></li>
+                    <li class="col-md-3"><a data-toggle="tab"href="#Rice">Rice</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="col-md-4 tab-pane fade in active">
+                      <img src="images/fastfood/chickenBurger.jpg" alt="">
+                      <h3>chicken Burger</h3>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div class="col-md-4 tab-pane fade in active">
+                      <img src="images/fastfood/beefBurger.jpg" alt="">
+                      <h3>Beef Burger</h3>
+                    </div>
+                  </div>
+                  <div class="tab-content">
+                    <div class="col-md-4 tab-pane fade in active">
+                      <img src="images/fastfood/chickenPizza.jpg" alt="">
+                      <h3>Chicken Pizza</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section><!--end of fast food-->
+          <section><!--customers-->
+            <div class="container">
+              <div class="well"><!--container happy customers-->
+                <div class="row"><!--row happy customers-->
+                  <div class="col-md-8 customers"><!--col1 happy customers-->
+                    <h3>Our Happy Customers</h3>
+                    <p><strong>George Richard</strong></p>
+                    <p>Great food! Menu is awesome, there foods are not onlt great but<br> also in the right price.
+                      i'll highly recommend them:)</p><
+                      <img src="images/customers/p1.png">
+                      <img src="images/customers/p2.png">
+                      <img src="images/customers/p3.png"> >
+                    </div><!--end of col1 happy customers-->
+                    <div class=""><!--col2 happy customers-->
+                      <h3>About Menu</h3>
+                      <p>We are menu a little team of 7 members, Ut wisi enim ad minim venian, quis nos trudexer ci tation ullamcorper
+                        suscipit lobortis nisi ut aliquip ex ea commondo conse quat.Duisau tem vel eum iriure dolor in.
+                      </p>
+                    </div><!--end of col2 happy customers-->
+                  </div><!--end of row happy customers-->
+                </div><!-- end of container happy customers-->
+              </div>
+          </section>
+            <section><!--start of subscribe-->
+              <div class="container-fluid" id="subscribe"><!--subscription section container div-->
+                <h4 class="subscribe">Get our daily food items delivered to your email.</h4>
+                <input type="email" name="Email" placeholder="Your Email">
+                <button type="submit" name="subcribe" class="btn btn-warning">subcribe</button>
+              </div><!-- end of subscription section container div-->
+            </section>
+            <section class="footer"><!--menu section-->
+              <footer>
+                <div class="container-fluid"><!--container div menu section-->
+                  <img src="images/footerlogos/logo_white.png">MENU
+                  <p>Thats What We Are</p>
+                  <img src="images/footerlogos/facebook.png" >
+                  <img src="images/footerlogos/twitter.png" >
+                  <img src="images/footerlogos/pinterest.png" >
+                  <p>2016 Menu Restaurant</p>
+                </div>
+              </footer>
+            </section><!-- end of menu section-->
+            <script src="js/script.js" type="text/javascript">
 
-          <div class="col-md-4"><!-- col  carousel section-->
-          <div class="panel panel heading"><!--panel heading drinks-->
-            <h4 class="panel panel-title">Drinks</h4>
-          </div><!--end of panel heading-->
-          <div class="panel panel-body"><!--panel body drinks-->
-            <img src="images/fastfood/beefBurger.jpg" >
-          </div><!--end of panel body fast foods-->
-          <div class="panel panel-footer"><!--panel footer-->
-            <p>beefBurger</p>
-          </div><!--end of panel footer-->
-        </div><!-- end of col carousel section-->
-
-        <div class="col-md-4"><!-- col  carousel section-->
-        <div class="panel panel heading"><!--panel heading drinks-->
-          <h4 class="panel panel-title">Chicken</h4>
-        </div><!--end of panel heading-->
-        <div class="panel panel-body"><!--panel body drinks-->
-          <img src="images/fastfood/chickenPizza.jpg" >
-        </div><!--end of panel body fast foods-->
-        <div class="panel panel-footer"><!--panel footer-->
-          <p>chickenPizza</p>
-        </div><!--end of panel footer-->
-      </div><!-- end of col carousel section-->
-      </div><!--end of row carousel section-->
-    </div><!--carousel container-->
-  </section><!--end of carousel-->
-  <section class="Happy-customers"><!--Happy-customers-->
-    <div class="container-fluid">
-    <div class="well"><!--container happy customers-->
-      <div class="row"><!--row happy customers-->
-        <div class="col-md-8"><!--col1 happy customers-->
-          <h3>Our Happy Customers</h3>
-          <p><strong>George Richard</strong></p>
-          <p>Great food! Menu is awesome, there foods are not onlt great but<br> also in the right price.
-            i'll highly recommend them:)</p><
-            <img src="images/customers/p1.png">
-            <img src="images/customers/p2.png">
-            <img src="images/customers/p3.png"> >
-        </div><!--end of col1 happy customers-->
-        <div class=""><!--col2 happy customers-->
-          <h3>About Menu</h3>
-          <p>We are menu a little team of 7 members, Ut wisi enim ad minim venian, quis nos trudexer ci tation ullamcorper
-            suscipit lobortis nisi ut aliquip ex ea commondo conse quat.Duisau tem vel eum iriure dolor in.
-           </p>
-        </div><!--end of col2 happy customers-->
-      </div><!--end of row happy customers-->
-    </div><!-- end of container happy customers-->
-  </div>
-  </section><!--end of happy customers section-->
-
-  <section class="subscription"><!--subscription section-->
-    <div class="container-fluid" id="subcribe"><!--subscription section container div-->
-      <div class="well">
-        <h3>Get our daily food items delivered to your email.</h3>
-        <input type="email" name="Email" placeholder="Your Email">
-        <button type="submit" name="subcribe" class="btn btn-warning">subcribe</button>
-      </div>
-    </div><!-- end of subscription section container div-->
-  </section><!-- end of subscription section-->
-
-  <section class="footer"><!--menu section-->
-    <footer>
-      <div class="container-fluid"><!--container div menu section-->
-        <img src="images/footerlogos/logo_white.png">MENU
-        <p>Thats What We Are</p>
-        <img src="images/footerlogos/facebook.png" >
-        <img src="images/footerlogos/twitter.png" >
-        <img src="images/footerlogos/pinterest.png" >
-        <p>2016 Menu Restaurant</p>
-      </div>
-    </footer>
-
-  </section><!-- end of menu section-->
-  </body><!--end of body-->
-  </div>
-</html>
+            </script>
+          </body>
+          </html>
